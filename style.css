@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Indie+Flower&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: relative;
+  align-items: center;
+  position: relative;
+}
+.navbar .background {
+  width: 50%;
+  background-color: rgb(188, 0, 22);
+  position: absolute;
+  right: 0;
+  z-index: -3;
+  top: 0;
+  bottom: 0;
+}
+.navbar-title {
+  font-size: 32px;
+}
+.navbar-title p span:nth-child(1) {
+  color: rgb(188, 0, 22);
+  font-family: "DynaPuff";
+}
+.navbar-title p span:nth-child(2) {
+  color: #ffc736;
+  font-family: "DynaPuff";
+}
+.navbar-menu {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1px;
+}
+.navbar-menu a {
+  text-decoration: none;
+}
+.navbar-menu a:nth-child(1) {
+  font-weight: 500;
+  color: rgb(188, 0, 22);
+}
+.navbar-menu a:nth-child(2) {
+  font-weight: 400;
+  color: white;
+}
+.navbar-tel {
+  color: white;
+}
+.navbar-tel i {
+  background-color: white;
+  color: black;
+  padding: 4px;
+  border-radius: 15px 15px 0 15px;
+  transform: scaleX();
+}
+.navbar-tel i:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.3s;
+  cursor: pointer;
+}
+
+/*banner*/
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 50px 20px;
+  position: relative;
+}
+.banner .background {
+  width: 50%;
+  background-color: rgb(188, 0, 22);
+  position: absolute;
+  right: 0;
+  z-index: -3;
+  top: 0;
+  bottom: 0;
+}
+.banner-left {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+.banner-left button {
+  background-color: rgb(188, 0, 22);
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 15px;
+}
+.banner-middle {
+  width: 33%;
+}
+.banner-middle span {
+  position: absolute;
+  top: 27%;
+  right: 38%;
+  width: 65px;
+  background-color: #ffc736;
+  font-weight: 600;
+  padding: 3px 6px;
+  border-radius: 30px;
+  text-align: center;
+}
+.banner-middle img {
+  width: 100%;
+  height: auto;
+  transform: scaleX();
+}
+.banner-middle img:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.3s;
+  cursor: pointer;
+}
+.banner-right {
+  width: 33%;
+  text-align: end;
+}
+.banner-right h4 {
+  color: #ffc736;
+  font-size: 30px;
+}
+
+/*products*/
+.product {
+  border-top: 5px solid rgb(188, 0, 22);
+  padding: 20px 50px;
+}
+.product-title {
+  text-align: center;
+}
+.product-title h1 {
+  color: rgb(188, 0, 22);
+}
+.product-title span {
+  font-family: "DynaPuff";
+}
+.products {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.products-card {
+  width: 300px;
+  border-radius: 40px 40px 0px 0px;
+  box-shadow: 2px 2px 5px gray;
+  transform: scaleX();
+  margin-bottom: 10px;
+  text-align: center;
+}
+.products-card:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.3s;
+  cursor: pointer;
+}
+.products-card img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  text-overflow: ellipsis;
+  background-color: rgb(188, 0, 22);
+  border-radius: 40px 40px 0px 0px;
+}
+.products-card-content {
+  display: flex;
+  justify-content: space-around;
+}
+.products-card-content span {
+  width: 65px;
+  background-color: #ffc736;
+  font-weight: 600;
+  padding: 3px 6px;
+  border-radius: 30px;
+  text-align: center;
+}
+.products-card-order i {
+  background-color: white;
+  color: black;
+  padding: 4px;
+  border-radius: 15px 15px 0 15px;
+  transform: scaleX();
+  background-color: black;
+  color: white;
+}
+.products-card-order i:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.3s;
+  cursor: pointer;
+}
+.products-card-order button {
+  background-color: rgb(188, 0, 22);
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 15px;
+}
+
+/* order */
+.order {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  border-top: 5px solid rgb(188, 0, 22);
+}
+.order-card {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 2px 9px black;
+  overflow-x: hidden;
+  transform: rotate(5deg);
+  border: 3px dotted white;
+}
+.order-card-left {
+  background-color: rgb(188, 0, 22);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 65%;
+  align-items: start;
+  padding: 0 0 15px 15px;
+}
+.order-card-left h3 {
+  color: white;
+}
+.order-card-left button {
+  background-color: rgb(188, 0, 22);
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  color: rgb(188, 0, 22);
+}
+.order-card-right {
+  width: 35%;
+  background-color: #ffc736;
+}
+.order-card-right img {
+  width: 300px;
+}
+
+/* social*/
+.social {
+  width: 100%;
+  padding: 20px 50px;
+}
+.social-title {
+  text-align: center;
+  color: rgb(188, 0, 22);
+  border-top: 5px solid rgb(188, 0, 22);
+}
+.social-card {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.social-cards {
+  flex: 1 1 150px;
+}
+
+/*footer*/
+.footer {
+  border-top: 5px solid rgb(188, 0, 22);
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+}
+.footer li {
+  list-style-type: none;
+}
+.footer-title {
+  font-size: 32px;
+  align-items: center;
+}
+.footer-title p span:nth-child(1) {
+  color: rgb(188, 0, 22);
+  font-family: "DynaPuff";
+}
+.footer-title p span:nth-child(2) {
+  color: #ffc736;
+  font-family: "DynaPuff";
+}
+.footer-title ul {
+  display: flex;
+  gap: 10px;
+}
+.footer-title ul li i {
+  font-size: 15px;
+}
+.footer-menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-menu ul {
+  display: flex;
+  width: 150px;
+  flex-direction: column;
+}
+.footer-menu ul li:nth-child(1) {
+  font-weight: 700;
+}
+.footer-menu ul li:nth-child(1):hover {
+  color: rgb(188, 0, 22);
+}/*# sourceMappingURL=style.css.map */
